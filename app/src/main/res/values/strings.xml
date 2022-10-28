@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">DZ3_3</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="text_password">Введите пароль</string>
+    <string name="text_vxod">Вход</string>
+</resources>
