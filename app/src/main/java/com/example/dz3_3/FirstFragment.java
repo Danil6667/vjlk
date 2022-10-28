@@ -16,9 +16,9 @@ import com.google.android.material.button.MaterialButton;
 
 public class FirstFragment extends Fragment {
 
-    EditText editPassword;
-    String isPassword = "aziz";
-    MaterialButton buttonConfig;
+    private EditText editPassword;
+    private final String isPassword = "aziz";
+    private MaterialButton buttonConfig;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -34,6 +34,7 @@ public class FirstFragment extends Fragment {
         editPassword = view.findViewById(R.id.ed_password);
         buttonConfig = view.findViewById(R.id.btn_vxod);
         click();
+
     }
 
     private void click() {
@@ -45,7 +46,9 @@ public class FirstFragment extends Fragment {
                 if (!password.equals(isPassword)){
                     editPassword.setError("Неверный Пароль");
                 }else{
-                    requireActivity().getSupportFragmentManager().beginTransaction()
+                    getParentFragmentManager().beginTransaction()
+                            .setCustomAnimations(R.anim.anim_rignt_to_left, R.anim.exit_left_to_right,
+                                    R.anim.anim_left_to_rignt,  R.anim.exit_right_to_left)
                             .replace(R.id.fragment_container, new RecyclerFragment())
                             .addToBackStack("FirstFragment")
                             .commit();
