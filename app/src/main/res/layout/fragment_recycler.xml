@@ -3,15 +3,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/fon_film"
+    android:background="@drawable/fon_lch"
     tools:context=".RecyclerFragment">
 
-   <androidx.recyclerview.widget.RecyclerView
-       android:id="@+id/rv_films"
-       android:layout_width="match_parent"
-       tools:listitem="@layout/item_film"
-       tools:itemCount="6"
-       android:layout_height="match_parent"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_list_of_club"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:itemCount="6"
+        tools:listitem="@layout/item_club" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btm_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="20dp"
+        android:src="@drawable/ic_add" />
 
 
 </FrameLayout>

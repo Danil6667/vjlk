@@ -4,4 +4,12 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="text_password">Введите пароль</string>
     <string name="text_vxod">Вход</string>
+    <string name="text_club">Club:</string>
+    <string name="text_wins">Wins:</string>
+    <string name="text_btm">Изменить</string>
+    <string name="text_input">Введите изменения</string>
+    <string name="text_fhoto">Фото</string>
+    <string name="text_name">Название</string>
+    <string name="text_win">Победы</string>
+    <string name="text_add">Добавить</string>
 </resources>
