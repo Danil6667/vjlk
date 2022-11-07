@@ -20,8 +20,8 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:fontFamily="@font/almendra_sc"
-        android:textColor="@color/purple_700"
-        android:textSize="40sp"
+        android:textColor="@color/white"
+        android:textSize="50sp"
         tools:text="Club" />
 
     <TextView
@@ -31,8 +31,8 @@
         android:layout_gravity="center"
         android:layout_marginTop="150dp"
         android:fontFamily="@font/almendra_sc"
-        android:textColor="@color/purple_700"
-        android:textSize="30sp"
+        android:textColor="@color/white"
+        android:textSize="40sp"
         tools:text="Win" />
 
 </FrameLayout>

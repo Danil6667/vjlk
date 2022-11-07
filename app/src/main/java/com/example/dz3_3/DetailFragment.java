@@ -44,12 +44,9 @@ public class DetailFragment extends Fragment {
         Bundle argument = getArguments();
         if (argument != null) {
             model = (FootballClubModel) argument.getSerializable("text");
-            argument.putString("club",model.getName());
-            argument.putInt("win", model.getWins());
             Glide.with(ivFullscreen.getContext()).load(model.getLabelUri()).into(ivFullscreen);
-
-
-
+            tvClub.setText(model.getName());
+            tvWin.setText(String.valueOf(model.getWins()));
         }
     }
 }

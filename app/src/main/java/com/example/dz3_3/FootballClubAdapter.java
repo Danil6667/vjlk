@@ -16,8 +16,7 @@ import com.google.android.material.card.MaterialCardView;
 
 import java.util.List;
 
-public class FootballClubAdapter extends RecyclerView.Adapter<FootballClubAdapter.ClubViewHolder> implements View.OnClickListener
-{
+public class FootballClubAdapter extends RecyclerView.Adapter<FootballClubAdapter.ClubViewHolder> implements View.OnClickListener {
 
     private List<FootballClubModel> listClubs;
     private OnItemClickListener onItemClickListener;
@@ -56,9 +55,9 @@ public class FootballClubAdapter extends RecyclerView.Adapter<FootballClubAdapte
     public static class ClubViewHolder extends RecyclerView.ViewHolder {
 
         private MaterialCardView mainContainer;
-        private  ImageView ivLabel;
-        private  TextView tvClub;
-        private  TextView tvWins;
+        private ImageView ivLabel;
+        private TextView tvClub;
+        private TextView tvWins;
 
         public ClubViewHolder(@NonNull View itemView) {
             super(itemView);
